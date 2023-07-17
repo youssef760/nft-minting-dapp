@@ -7,6 +7,10 @@ module.exports = {
     localhost: {
       url: 'http://127.0.0.1:8545',
     },
+    sepolia: {
+      url: `https://sepolia.infura.io/v3/${process.env.API_KEY}`,
+      accounts: [process.env.DEPLOYER_KEY]
+    }
   },
   solidity: {
     version: '0.8.11',
